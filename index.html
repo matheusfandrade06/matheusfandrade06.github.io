@@ -1,1 +1,123 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Matheus Andrade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> <!--/importação da *fonte poppins(?)* -->
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+<body>
+    <header id="site-header">
+        <nav class="navbar">
+            
+            <img src="imgs/logoWhite.png" alt="" class="logo">
+
+            <ul id="nav-links" class="">
+                <li><a href="#home">Sobre mim</a></li>
+                <li><a href="#about">Projetos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Linguagens</a></li>
+                <li><a href="#contact">Habilidades</a></li>
+            </ul>
+            <div class="header-icons">
+              <a href="#" id="zap-header"> 
+                <i id="zap-icon" class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            <button class="btn btn-mobile">
+                <i class="fa-solid fa-bars" ></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="container">
+       <!-- HOME Section -->
+        <section id="home">
+            <img src="imgs/logo nobackground.png" alt="programming" class="home-image">
+            <h1 class="home-title">
+             Interfaces rápidas, acessíveis e <span>escaláveis</span> 
+            </h1>
+            <p class="home-description">
+             Sou engenheiro de computação e desenvolvedor front‑end especializado em React, TypeScript e otimização de desempenho. Crio interfaces responsivas, acessíveis e fáceis de manter; veja meus projetos para conferir soluções reais e código limpo. 
+            </p>
+            <div class="home-actions">
+                <a href="#" class="btn btn-default">
+                   <img src="imgs/linkedin.svg" class="iconbutton"> LinkedIn
+                </a>
+                <a href="#" class="btn btn-outlined">
+                   <img src="imgs/github.svg" class="iconbutton"> GitHub
+                </a>
+            </div>
+        </section>
+
+       <!-- Trending Section -->
+        <section id="projects">
+            <h2 class="title">
+                Projetos Realizados
+            </h2>
+
+            <div class="project-cards">
+                <div class="project-card">
+                     <h3 id="project-name"> PROTOCOL - Planejamento Tributário IRPF</h3>
+                     <img src="imgs/projeto 1.png" alt="site1" class="print">
+                    <p class="Linguagens-usadas">
+                     Linguagens usadas: <img src="imgs\html-5.svg" alt="html"> <img src="imgs\js.svg" alt="js"> <img src="imgs/css3.svg" alt="">
+                    </p>
+                    <p class="project-description">
+                        Este projeto consiste em um website completo, integrando um frontend responsivo e um backend escalável para oferecer suporte técnico sobre o IRPF.
+                        Como profissional formado em contabilidade e pós-graduado em gestão Tributária, busco neste projeto integrar a Programação e a Contabilidade.
+                    </p>
+                    <div class="project-buttons">
+                      <a href="#" class="btn btn-default" target='_blank'>
+                         Acessar projeto
+                      </a>
+                      <a href="#" class="btn btn-outlined target='_blank'">
+                        <img src="imgs/github.svg" class="iconbutton"> repositório
+                      </a>
+                    </div>  
+                </div>
+
+                <div class="project-card">
+                    <h3 id="project-name"> PROTOCOL - Calculadora Tributária</h3>
+                    <img src="imgs/projeto 2.png" alt="site2" class="print">
+                    <p class="Linguagens-usadas"> Linguagens usadas: 
+                     <img src="imgs\html-5.svg" alt="html"> <img src="imgs\js.svg" alt="js"> <img src="imgs/css3.svg" alt="CSS"> <img src="imgs/figma.svg" alt="figma">
+                    </p>
+                    <p class="project-description">
+                        Este projeto é um simulador tributário avançado para pequenos e médios empreendedores, focado na experiência do usuário (UX). seu objetivo é desenvolver uma interface reativa que calcula alíquotas e comparativos tributários em tempo real com um visual dinâmico e único.
+                    </p>
+                    <div class="project-buttons">
+                      <a href="#" class="btn btn-default target='_blank'">
+                         Acessar projeto
+                      </a>
+                      <a href="https://github.com/matheusfandrade06/PROTOCOL-Calculadora_Tributaria.git" class="btn btn-outlined target='_blank'">
+                        <img src="imgs/github.svg" class="iconbutton"> repositório
+                      </a>
+                    </div>  
+
+                </div>
+
+                <div class="project-card">
+                    <h3 id="project-name"> Em Andamento...</h3>
+                    <img src="imgs/site 1.png" alt="site3" class="print">
+                    <p class="Linguagens-usadas">
+                     <img src="imgs/C.png" alt="html"> <img src="#" alt=""> <img src="#" alt="">  
+                    </p>
+                    <p class="project-description">
+                        A definir...
+                        <span>segurança da computação</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    <footer class="footer"><div class="assinatura">Feito por Matheus Andrade</div></footer> 
+    </main>
+ <script src="script.js"></script>
+</body>
+</html>

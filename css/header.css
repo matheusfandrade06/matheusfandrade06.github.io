@@ -1,0 +1,106 @@
+header {
+    width: 100%;
+    background-color: var(--color-primary-1);
+    padding: 12px 4%;
+    position: fixed; /*fixa o header sempre na pagina*/
+    top: 0; 
+    left: 0;
+    z-index: 1; /*Faz com que o Banner fique por cima do Header*/
+    transition: all 0.4s ease; /*deixa o efeito do hover mais suave*/
+
+    .navbar{  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {width: 200px;};
+        .btn-mobile{
+            width: 70px;
+            &:hover{
+                color: var(--color-secondary-1);
+            }
+        }
+
+        ul{
+            display: none;
+            list-style: none; /*tira as bolinhas de como se fosse uma lista*/
+            flex-direction: column;
+            gap: 0.5rem; /*Espaço entre as opções da lista*/
+            width: 100%;
+            position: absolute;
+            top: 58px;
+            left: 0;
+            padding: 1rem;
+            background-color: var(--color-primary-1);
+            transition: all 0.4s ease; /*deixa o efeito do hover mais suave*/
+            
+            &.show{
+                display: flex;
+            }
+            li{
+                text-align: center;
+                a{
+                   color: var(--color-neutral-0); 
+                   text-decoration: none; /*remove a linha de baixo, pra disfarçar que não é um link rs*/
+                   font-size: 1.2rem; /*o tamanho do texto ta igual o padrão...*/
+                   font-weight: 500;
+                   transition: all 0.4s ease; /*deixa o efeito do hover mais suave*/
+
+                   &:hover{
+                    color: var(--color-secondary-1);
+                    border-bottom: 1px solid var(--color-secondary-1);  /*coloca a linha de baixo*/
+                   }
+                }
+            }
+        }
+        #zap-header{
+                display: none;
+            }
+
+        }
+    }
+
+  
+
+@media (min-width: 769px){ /*Fornece responsividade para o Site, fazendo com que se transforme para PC/MOBILE */
+  header { /*OBS: precisa seguir a mesma ordem do css na chamada dos Objetos*/
+    background-color: transparent;
+    .navbar{
+        .btn-mobile {
+            display: none;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            position: static;
+            gap: 1rem;
+            width: auto;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        #zap-header{
+            display: flex;
+            justify-content: right;
+            text-decoration: none;
+            animation: all 0.9s ease;
+            width: 200px;
+            #zap-icon{
+                color: var(--color-neutral-0);
+                font-size: 35px ;
+                transition: all 0.4s ease;
+                &:hover{
+                 transform: scale(1.05);
+                 color: var(--color-secondary-1);
+            }
+            }
+        }
+    }
+ }
+header.scrolled{
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+    #nav-links{
+        background-color: transparent;
+    }
+}
+}

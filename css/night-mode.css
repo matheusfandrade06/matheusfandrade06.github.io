@@ -1,0 +1,97 @@
+/* No HTML: ~
+<div class="sun-moon">
+                 <input type="checkbox" />
+                 <span class="circle large"></span>
+                 <span class="circle small"></span>
+              </div>
+*/
+
+header{
+    .navbar{
+        .header-icons{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .sun-moon{ /*é o formato atrás que contem o sol e a lua*/
+          position: relative;
+          width: 60px;
+          height: 33.6px;
+          padding: 3px;  
+          border-radius: 45px;
+          border: 1.8px solid #1a237e;
+          background-color: var(--color-secondary-1);
+          overflow: hidden;
+          transition: all 0.5s ease;
+        }  
+        
+        .circle { /*configuração padrão dos dois circulos que formam o sol e a lua*/
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        }  
+        .small { /*circulo que cria a lua*/
+        width: 20px;
+        height: 20px;
+        background: var(--color-secondary-1);
+        left: 12px;
+        top: 1.8px;
+        transition: all 0.5s ease;
+        }
+
+        .large { /*o sol*/
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border: 1.8px solid #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 4.2px;
+        transition: all 0.5s ease;
+        }   
+ }
+}
+
+  .sun-moon input { /*checkbox invisivel que ativa/desativa o modo Light*/
+        position: absolute;
+        width: 100%; /*faz com que a checkbox preencha todo o espaço do .sun-moon(a div de fundo)*/
+        height: 100%;
+        left: 0;
+        top: 0;
+        margin: 0;
+        opacity: 0; /*deixa invisivel*/
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    /*Change the background color*/
+    .header-icons .sun-moon.move{
+        background-color: #fff;
+        border-color: var(--color-secondary-1);
+    }
+
+    /*Move the bigger circle*/
+    .header-icons .move .large {
+        left: 30px;
+        background: var(--color-secondary-1);
+        border-color: rgb(166, 98, 255);
+    }
+
+    /*Move the smaller circle*/
+    .header-icons .move .small {
+        left: 36px;
+        top: 33px;
+        background: white;
+    }
+
+    /*No Javascript: 
+    const switchBox = document.querySelector(".sun-moon");
+document.querySelector("input").addEventListener("change", (e) => {
+    const { checked } = e.target;   
+    if (checked) {
+        switchBox.classList.add("move");
+    } else {
+        switchBox.classList.remove("move");
+    }
+});
+    */
