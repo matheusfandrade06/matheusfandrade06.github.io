@@ -247,7 +247,7 @@ a.btn{
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual (1 fração cada) */
-        grid-template-rows: repeat(2, 1fr); /* Duas linhas de altura igual (1 fração cada) */
+        /* grid-template-rows: repeat(2, 1fr); /* Duas linhas de altura igual (1 fração cada) */
         gap: 40px; /* Espaçamento entre os itens */
     }
 
@@ -258,7 +258,7 @@ a.btn{
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual (1 fração cada) */
-        grid-template-rows: repeat(2, 1fr); /* Duas linhas de altura igual (1 fração cada) */
+        /* grid-template-rows: repeat(2, 1fr); /* Duas linhas de altura igual (1 fração cada) */
         gap: 40px; /* Espaçamento entre os itens */
    }
 }
